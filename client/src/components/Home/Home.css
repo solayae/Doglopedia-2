@@ -1,0 +1,66 @@
+.container-cards {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    max-width: 80rem;
+    margin: 25px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.filters-container {
+    display: flex;
+    justify-content: center;
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+.create-dog {
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 22px;
+    right: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cargar {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.filters-select {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.navi {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navi select {
+    cursor: pointer;
+}
+
+.boton-crear {
+    position: absolute;
+    top: 22px;
+    right: 120px;
+}
+
+.boton-crear button {
+    width: auto;
+    font-size: 22px;
+    padding: 5px;
+    cursor: pointer;
+}

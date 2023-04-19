@@ -1,0 +1,40 @@
+.navbar {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .searchDiv {
+    display: flex;
+    width: 45%;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  .filterDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  
+  
+  .filterSelect {
+    font-family: inherit;
+  }
+  
+  .navbar button {
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 22px;
+    right: 100px;
+    font-size: 16px;
+    cursor: pointer;
+  }

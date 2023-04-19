@@ -1,0 +1,97 @@
+h1 {
+    color: black;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 30px;
+}
+
+p {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 50px;
+}
+
+.form-input-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.form-part {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.button-submit-dog {
+    position: absolute;
+    bottom: 35px;
+    left: 45%;
+    font-size: 22px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.temperaments-selected {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    max-width: 80%;
+
+}
+
+.temperament-button {
+    display: flex;
+
+}
+
+.button-x {
+    width: 20px;
+    height: 20px;
+}
+
+.option-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+input {
+    height: 35px;
+    font-size: 20px;
+}
+
+.form-input-container select {
+    height: 35px;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-input-container select option {
+    font-size: 16px;
+}
+
+#button-home {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    font-size: 22px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#form-part-1 {
+    width: 40vw;
+}
+
+#form-part-2 {
+    width: 60vw;
+}

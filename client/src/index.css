@@ -1,0 +1,19 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+
+}
+
+body {
+  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Quicksand', sans-serif;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

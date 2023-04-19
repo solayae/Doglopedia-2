@@ -1,0 +1,36 @@
+.paginated-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.paginated-container ul {
+    display: flex;
+    gap: 8px;
+}
+.paginated-container ul li {
+    display: inline-block;
+    border: 10px;
+  
+    
+}
+
+.paginated-container ul li a:hover {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgb(175, 186, 196);
+
+}
+
+
+.paginated-number {
+    width: auto;
+    height: auto;
+}
+.paginated-number-button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}

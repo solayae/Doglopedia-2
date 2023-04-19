@@ -1,0 +1,152 @@
+.detail-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.detail-container h3 {
+    font-size: 22px;
+}
+
+.detail-container p {
+    font-size: 22px;
+}
+
+.detail-container h1 {
+    background-color: rgb(240, 172, 3);
+    padding-bottom: 40px;
+    padding-top: 40px;
+    color: white;
+    font-weight: normal;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+
+}
+
+.detail-elements-container {
+    display: flex;
+    padding: 25px;
+    align-items: center;
+}
+
+.detail-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+    padding-left: 45px;
+}
+
+.detail-img-container {
+
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.detail-container button {
+    width: 85px;
+    height: 50px;
+    position: absolute;
+    top: 55px;
+    left: 55px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* LOADING */
+
+.loader {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    transform: rotate(165deg);
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%);
+}
+
+.loader:before {
+    animation: before8 2s infinite;
+}
+
+.loader:after {
+    animation: after6 2s infinite;
+}
+
+@keyframes before8 {
+    0% {
+        width: 0.5em;
+        box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+
+    35% {
+        width: 2.5em;
+        box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);
+    }
+
+    70% {
+        width: 0.5em;
+        box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+
+    100% {
+        box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+}
+
+@keyframes after6 {
+    0% {
+        height: 0.5em;
+        box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+
+    35% {
+        height: 2.5em;
+        box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);
+    }
+
+    70% {
+        height: 0.5em;
+        box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);
+    }
+
+    100% {
+        box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+}
+
+.loader {
+    position: absolute;
+    top: calc(50% - 1.25em);
+    left: calc(50% - 1.25em);
+}
+
+.loading-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
