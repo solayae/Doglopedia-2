@@ -75,26 +75,26 @@ export default function Home() {
               handleClick(e);
             }}
           >
-            Cargar todos los Perros
+            Get all dogs
           </button>
           <select className='por' onChange={(e) => handleFilterAsc(e)}>
-            <option value='All'>Ordenar por</option>
+            <option value='All'>Order by</option>
             <option value='Asc'>A-Z</option>
             <option value='Des'>Z-A</option>
           </select>
 
           <select onChange={(e) => handleFIlterCreated(e)}>
-            <option value='All'>Filtar por</option>
-            <option value='exis'>Creados</option>
-            <option value='raza'>Existentes</option>
+            <option value='All'>Filter by</option>
+            <option value='exis'>Created</option>
+            <option value='raza'>Existing</option>
           </select>
           <select onChange={(e) => handleOrderPeso(e)}>
-            <option value='All'>Peso</option>
-            <option value='small'>Pequeño </option>
-            <option value='big'>Grande</option>
+            <option value='All'>Weight</option>
+            <option value='small'>Small</option>
+            <option value='big'>Big</option>
           </select>
           <select onChange={(e) => handleFilterTemperament(e)}>
-            <option value='Todos'>Temperamentos</option>
+            <option value='Todos'>Temperaments</option>
             {temperamentAll.map((e) => (
               <option defaultValue='message' key={e.id} value={e.name}>
                 {' '}
@@ -105,7 +105,7 @@ export default function Home() {
           </select>
           <div className='boton-crear'>
             <Link to='/dogsCreate'>
-              <button>Crear Dog</button>
+              <button>Create Dog</button>
             </Link>
           </div>
         </div>

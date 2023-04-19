@@ -22,40 +22,40 @@ function validate(input) {
 
   if (!input.maxHeight) errors.maxHeight = 'La Altura es requerida';
   else if (/[^0-9 ]+/g.test(input.minWeight))
-    errors.minWeight = 'El peso valido es en numeros';
+    errors.minWeight = 'Valid weight is in numbers';
   else if (parseInt(input.maxHeight) < parseInt(input.minHeight))
     errors.maxHeight =
-      'La altura maxima no puede ser menor que la altura mínima';
+      'The maximum height cannot be less than the minimum height.';
 
-  if (!input.minWeight) errors.minWeight = 'El Peso es obligatorio';
+  if (!input.minWeight) errors.minWeight = 'Weight is required';
   else if (/[^0-9 ]+/g.test(input.minWeight))
-    errors.minWeight = 'El peso valido es en numeros';
+    errors.minWeight = 'Valid weight is in numbers';
   else if (parseInt(input.minWeight) > input.maxWeight)
-    errors.minWeight = 'El peso minimo no puede ser mayor que el peso maximo';
+    errors.minWeight = 'The minimum weight cannot be greater than the maximum weight';
 
   if (!input.maxWeight) errors.maxWeight = 'El Peso es obligatorio';
   else if (/[^0-9 ]+/g.test(input.maxWeight))
-    errors.maxWeight = 'El peso valido es en numeros';
+    errors.maxWeight = 'Valid weight is in numbers';
   else if (parseInt(input.maxHeight) < input.minWeight)
-    errors.maxWeight = 'El peso Maximo no puede ser menor que el peso minimo';
+    errors.maxWeight = 'The Maximum weight cannot be less than the minimum weight';
 
   if (!input.minlife_span)
-    errors.minlife_span = 'La Esperanza de vida es un dato Obligatorio';
+    errors.minlife_span = 'Life expectancy is a mandatory data';
   else if (/[^0-9 ]+/g.test(input.minlife_span))
-    errors.minlife_span = 'La esperanza de vida debe ir en numeros';
+    errors.minlife_span = 'Life expectancy should go in numbers';
   else if (parseInt(input.minlife_span) > input.maxlife_span)
     errors.minlife_span =
-      'La esperanza minima de vida no puede ser mayor a la esperanza maxima';
+      'The minimum life expectancy cannot be greater than the maximum life expectancy.';
 
-  if (!input.image) errors.image = 'La url no puedes estar vacia';
+  if (!input.image) errors.image = 'The url cannot be empty';
 
   if (!input.maxlife_span)
-    errors.maxlife_span = 'La Esperanza de vida es un dato Obligatorio';
+    errors.maxlife_span = 'Life expectancy is a mandatory data';
   else if (/[^0-9 ]+/g.test(input.maxlife_span))
-    errors.maxlife_span = 'La esperanza de vida debe ir en numeros';
+    errors.maxlife_span = 'Life expectancy should go in numbers';
   else if (parseInt(input.maxlife_span) < parseInt(input.minlife_span))
     errors.maxlife_span =
-      'La esperanza maxima de vida no puede ser menor a la esperanza minima';
+      'The maximum life expectancy cannot be less than the minimum life expectancy.';
   return errors;
 }
 
@@ -137,7 +137,7 @@ export default function DogCreate() {
       image: ' ',
       temperament: [],
     });
-    alert('Genial !!! haz creado tu Perro!');
+    alert('Congratulations, you have created a new dog!');
     history.push('./home');
   }
   function handleDelete(el) {
@@ -249,10 +249,10 @@ export default function DogCreate() {
 
             {/* PESO */}
             <div className='form-input-container'>
-              <h3>Peso</h3>
+              <h3>Weight</h3>
 
               <div className='option-input'>
-                <label>Mínimo</label>
+                <label>Min</label>
                 <input
                   type='text'
                   value={input.minWeight}
@@ -264,7 +264,7 @@ export default function DogCreate() {
                   {errors.minWeight && <p>{errors.minWeight}</p>}
                 </div>
 
-                <label>Máximo</label>
+                <label>Max</label>
                 <input
                   type='text'
                   value={input.maxWeight}
@@ -279,10 +279,10 @@ export default function DogCreate() {
             </div>
             {/* ESPERANZA DE VIDA */}
             <div className='form-input-container'>
-              <h3>Expectativa de vida</h3>
+              <h3>Life Span</h3>
 
               <div className='option-input'>
-                <label>Mínima</label>
+                <label>Min</label>
                 <input
                   type='text'
                   value={input.minlife_span}
@@ -308,7 +308,7 @@ export default function DogCreate() {
             </div>
           </div>
           <button className='button-submit-dog' type='submit'>
-            Crear Perro
+            Send New Breed
           </button>
         </form>
       </div>
